@@ -1,9 +1,9 @@
 import time
-import board
+from adafruit_blinka.agnostic import board_id
 import busio
 import adafruit_adxl34x
 
-i2c = busio.I2C(board.SCL, board.SDA)
+i2c = busio.I2C(SCL, SDA)
 accelerometer = adafruit_adxl34x.ADXL345(i2c)
 
 while True:
